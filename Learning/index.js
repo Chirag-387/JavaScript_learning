@@ -41,10 +41,66 @@
 // console.log(online);
 // console.log(typeof online);
 
-let name = "NoName";
-let age = 77;
-let student = false;
+// let name = "NoName";
+// let age = 77;
+// let student = false;
 
-document.getElementById("myP1").textContent = `Your name is ${name}`;
-document.getElementById("myP2").textContent = `Your age is ${age}`;
-document.getElementById("myP3").textContent = `Student = ${student}`;
+// document.getElementById("myP1").textContent = `Your name is ${name}`;
+// document.getElementById("myP2").textContent = `Your age is ${age}`;
+// document.getElementById("myP3").textContent = `Student = ${student}`;
+
+/*
+    Arithmetic operators = operands -> which are values, varibales, etc.
+    operators -> +, -, /, *, **, %
+
+    increment -> students++ -> added 1.
+    decrement -> students-- -> subtracted 1.
+
+    operator precedence;
+    1. parenthesis ()
+    2. exponents
+    3. multiplication -> division -> modulo
+    4. addition -> subtraction
+
+*/
+
+/*
+
+Accepting user inputs;
+1. Easy way -> window prompt
+2. Professional way -> HTML textbox
+
+*/
+// 1.
+// let username = window.prompt("What's your name ?");
+// console.log(username); 
+
+// 2.
+let username;
+document.getElementById("myButton").onclick = function() {
+    username = document.getElementById("myName").value;
+    document.getElementById("myH1").textContent = `Hello ${username}`;
+}
+
+
+// Type conversion in JavaScript -> Converting one datatype variable into another.
+// dataypes that are type converted are boolean, string, number.
+
+// const -> which are constants that are the variables which can't be changed once they are declared with a value.
+
+/*
+
+const PI = 3.14;
+let radius = window.prompt("What's the radius of the circle?");
+radius = Number(radius);
+let circumference = 2 * PI * radius;
+console.log(circumference);
+
+*/
+
+// Math is a object which have different inbuilt mathematical functions.
+
+// Random Number Generator
+
+let randNum = Math.floor(Math.random() * 6) + 1;
+console.log(randNum);

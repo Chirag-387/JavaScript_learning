@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter Program</title>
+    </head>
+    <body>
+
+        <h1>Counter Value</h1>
+        <label id = "value">0</label><br><br>
+        <button id = "increment">Increment</button>
+        <button id = "decrement">Decrement</button>
+        <button id = "reset">Reset</button>
+
+        <script>
+
+            let increment = document.getElementById("increment");
+            let decrement = document.getElementById("decrement");
+            let reset = document.getElementById("reset");
+            let value = document.getElementById("value");
+            let count = 0;
+
+            increment.onclick = function() {
+                count++;
+                value.textContent = count;
+            }
+
+            decrement.onclick = function() {
+                count--;
+                value.textContent = count;
+            }
+
+            reset.onclick = function() {
+                value.textContent = 0;
+            }
+
+        </script>
+    </body>
+</html>
