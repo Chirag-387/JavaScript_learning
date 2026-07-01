@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if statement</title>
+</head>
+<body>
+
+    <h1>Age checker for the license</h1>
+    <label>Enter Your age: </label><input type = "text" id = "myText"><br><br>
+    <button id = "mySubmit">Submit</button>
+    <p id = "result"></p>
+
+    <script>
+
+        const myText = document.getElementById("myText");
+        const mySubmit = document.getElementById("mySubmit");
+        const result = document.getElementById("result");
+        let age;
+
+        mySubmit.onclick = function() {
+
+            age = myText.value;
+            age = Number(age);
+
+            if(age >= 100) {
+                result.textContent = `You are too old for license.`;
+            }
+            else if(age >= 18) {
+                result.textContent = `You are eligible.`;
+            }
+            else if(age > 0) {
+                result.textContent = `You are NOT eligible.`;
+            }
+            else if(age == 0) {
+                result.textContent = `You are just born, why so much hurry?`;
+            }
+            else {
+                result.textContent = `INVALID INPUT.`;
+            }
+
+        }
+
+
+    </script>
+
+</body>
+</html>
