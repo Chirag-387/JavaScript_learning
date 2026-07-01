@@ -104,3 +104,45 @@ console.log(circumference);
 
 let randNum = Math.floor(Math.random() * 6) + 1;
 console.log(randNum);
+
+/*
+
+Ternary operatoor -> helps to assign variable based on a condition.
+condition ? codeIfTrue : codeIfFalse;
+
+*/
+
+/*
+
+Switch -> Can be used for an efficient replacement of the many else if statements
+
+*/
+
+let day = 1;
+
+switch(day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    case 6:
+        console.log("Saturday");
+        break;
+    case 7:
+        console.log("Sunday");
+        break;
+    default:
+        console.log("INVALID INPUT");
+        break;
+}

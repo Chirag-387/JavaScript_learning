@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        // strings -> used to manipulate and work with strings.
+
+        let name = "Chirag Tulani";
+
+        // get a character at a particular index.
+        console.log(name.charAt(0));
+
+        // returns the first occurrence of a character index.
+        console.log(name.indexOf('a'));
+
+        // returns the last occurrence of a character index.
+        console.log(name.lastIndexOf('a'));
+
+        // gives the length of the string.
+        console.log(name.length);
+
+        // to delete the white spaces at the start and end of the string.
+        let newName = "        Chirag      ";
+        newName = newName.trim();
+        console.log(newName);
+
+        // convert the entire string into upper case.
+        console.log(newName.toUpperCase());
+
+        // convert the entire string into lower case.
+        console.log(newName.toLowerCase());
+
+        // to repeat a string.
+        console.log(name.repeat(3));
+
+        // startWith returns the boolean value.
+        console.log(name.startsWith(' '));
+        console.log(name.startsWith('c'));
+        console.log(name.startsWith('')); // returns true
+
+        // endsWith returns the boolean value.
+        console.log(name.endsWith(' '));
+        console.log(name.endsWith('i'));
+        console.log(name.endsWith('')); // returns true
+
+        // includes return boolean for a character present in the string.
+        console.log(name.includes("Chirag")); // returns true
+        console.log(name.includes('y'));
+        console.log(name.includes(''));
+
+        let phone_number = "123-456-7890";
+
+        // replaces a charcter or string with another.
+        console.log(phone_number.replaceAll('-', ''));
+        console.log(phone_number.replaceAll("123", "321"));
+
+        // padStart method
+        console.log(phone_number.padStart(15, "123")); // 123123-456-7890
+        console.log(phone_number.padStart(15, '0')); // 000123-456-7890
+
+        //padEnd method
+        console.log(phone_number.padEnd(15, "123")); // 123-456-7890123
+        console.log(phone_number.padEnd(15, '0')); // 123-456-7890000
+
+        // String slicing -> creating a subString from a portion of a string. string.slice(Start, End);
+
+        console.log(name.slice(0, 6)); // Chirag
+        console.log(name.slice(7)); // Tulani
+        console.log(name.slice(-1)); // i
+
+    </script>
+
+</body>
+</html>
